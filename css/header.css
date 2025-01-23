@@ -1,0 +1,106 @@
+/* 기본 header 스타일 */
+header {
+    position: fixed; /* 화면 상단에 고정 */
+    /* top: 0; */
+    width: 100%;
+    background-color: transparent; /* 초기 배경색은 투명 */
+
+ 
+    transition: background-color 0.3s ease; /* 배경색이 부드럽게 변경되도록 설정 */
+    z-index: 1000; /* 다른 요소들보다 위에 표시 */
+}
+
+header.scrolled {
+    background-color: white; /* 스크롤 시 배경색을 흰색으로 변경 */
+}
+
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #47433f;
+    
+}
+nav > img {
+    position: absolute;  /* 절대 위치로 중앙 배치 */
+    left: 50%;
+    transform: translateX(-50%);  /* X축으로 절반만큼 이동하여 중앙 정렬 */
+    height: 30px;
+}
+.menu{
+    display: flex;
+    gap: 40px;
+    
+    font-weight: 600;
+}
+.banner_icon{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    position: relative;
+}
+.sale_box{
+    font-family: pretendard;
+    position: absolute;
+    top: 35px;
+    left: -46px;
+    background-color: #47433f;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    border-radius: 222px;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 600;
+ 
+    line-height: 16px;
+    letter-spacing: 0;
+    z-index: 44;
+    transition: all 0.3s;
+    animation: moveUpDown 1s infinite linear; /* 애니메이션 적용 */
+    animation-timing-function: linear;
+    
+}
+
+.fa-solid.fa-bars {
+    display: none; /* 기본적으로 햄버거 메뉴 아이콘은 숨김 */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* 초기 위치 */
+    }
+    50% {
+        transform: translateY(-4px); /* 위로 10px 이동 */
+    }
+    100% {
+        transform: translateY(0); /* 다시 원래 위치로 */
+    }
+}
+
+
+@media screen and  (max-width: 1000px) {
+    .menu {
+        display: none; /* .menu 숨김 */
+    }
+    .fa-solid.fa-bars {
+        display: block; /* 모바일에서 햄버거 메뉴 아이콘 표시 */
+    }
+    .fa-solid.fa-magnifying-glass{
+        display: none;
+    }
+    .join{
+        display: none;
+    }
+    .sale_box{
+        left: -25px;
+
+    }
+}

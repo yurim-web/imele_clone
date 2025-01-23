@@ -1,0 +1,32 @@
+
+.top_banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #464341;
+    font-size: 13px;
+    padding: 5px 0px 0px 0px;
+    width: 100%;
+    height: 65px;
+   
+  }
+
+  .first_text,.second_text {
+    position: absolute;
+    top: 15px;
+    opacity: 0;
+  }
+  .top_banner_line{
+    width: 100vw;
+    height: 1px;
+    background-color: #bababa;
+    opacity: 0.3;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
