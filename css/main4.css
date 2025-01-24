@@ -1,3 +1,4 @@
+/* section5,section6 css */
 .section5{
     padding: 150px 80px;
     background-color: #eeece9;
@@ -16,11 +17,9 @@
     opacity: 0;
 }
 
-
 .section6{
     padding: 120px 80px;
     background-color: #f7f7f6;
-
 }
 
 .section6_title{
@@ -49,6 +48,7 @@
     transform: translateY(60px);
     opacity: 0;
 }
+
 .widget{
     overflow: hidden;
     width: 100%;

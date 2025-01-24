@@ -1,3 +1,4 @@
+/* section4 css */
 .section4{
     background-color: #f7f7f5;
     padding: 200px;
@@ -5,6 +6,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
+
 .icon_box_top{
     display: flex;
     flex-direction: column;
@@ -13,6 +15,7 @@
     transform: translateY(-60px);
     opacity: 0;
 }
+
 .icon_box_down{
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
     transform: translateY(60px);
     opacity: 0;
 }
+
 .icon_img{
     height: 115px;
     width: 75px;

@@ -1,4 +1,3 @@
-// section3 animation
 const timeline2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".section3",
@@ -19,8 +18,6 @@ timeline2.to(".section3_title", {
   },"0"); 
 
 
-
-  // section3 animation
 const timeline3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".section4",

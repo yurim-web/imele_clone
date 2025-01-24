@@ -1,7 +1,9 @@
+/* footer pc 버전 css */
 footer{
     background-color: #f7f7f6;
     color: #47433f;
 }
+
 .footer_container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -10,15 +12,18 @@ footer{
     margin: 0 auto;
     padding-bottom: 80px; 
 }
+
 .small_logo{
     height: 12px;
     margin-bottom: 15px;
 }
+
 .footer_title{
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 15px;
 }
+
 .date{
     display: block;
     font-size: 16px;
@@ -26,6 +31,7 @@ footer{
     font-weight: 700;
 
 }
+
 .footer_detail{
     font-size: 11px;
     line-height: 1.7;
@@ -34,6 +40,7 @@ footer{
 .right_menu{
     text-align: right;
 }
+
 .footer_line{
     width: 100vw;
     height: 1px;
@@ -51,6 +58,7 @@ footer{
     display: flex;
     gap: 20px;
 }
+
 .cs_follow_container{
     display: flex;
     justify-content: space-between;
@@ -85,6 +93,4 @@ footer{
      .cs_follow_container{
          padding: 25px 0px;
     }
-
-
 }

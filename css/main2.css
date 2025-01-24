@@ -1,13 +1,14 @@
+/* section3 css */
 .section3{
     width: 100vw;
     height: 500px;
     display: flex;
 }
+
 .video{
     flex: 1;
-
-
 }
+
 .video_container{
     flex: 1;
     text-align: center;
@@ -27,6 +28,7 @@
     transform: translateY(-20px);
     opacity: 0;
 }
+
 .section3_detail{
     font-size: 15px;
     line-height: 1.7;
